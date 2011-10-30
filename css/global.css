@@ -1,0 +1,252 @@
+/* 
+Global
+___________________________________________________
+*/
+/* =-- 1. LESS --- */
+/* =-- 1. LESS --- */
+/* 	COLORS (1 = lightest, 10 = med, 20 = dark)
+		Primary: Blue 
+		Secondary: Grey
+		Highlight: Green
+		Error: Red
+	*/
+/* GRADIENTS */
+/* CORNERS (largest, larger, large, med, small, smaller, smallest) */
+/* SHADOWS */
+/* IMAGES */
+/* =-- 2. Reset & Quick Fixes --- */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+abbr[title], dfn[title] {
+  cursor: help;
+}
+body {
+  padding: 20px;
+}
+h1 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  padding: 0;
+}
+h2 {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+p {
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0 0 14px 0;
+  max-width: 500px;
+}
+.clm {
+  float: left;
+  width: 40%;
+  max-width: 460px;
+}
+.left {
+  padding-right: 5%;
+}
+li {
+  font-size: 14px;
+  line-height: 20px;
+  list-style-type: none;
+}
+/* LOADING */
+.toggle-loading {
+  border: 1px solid #fff;
+  position: absolute;
+}
+.toggle-loading  .icon {
+  float: left;
+  width: 16px;
+  height: 16px;
+  padding: 10px 0 10px 10px;
+  background: url(../img/bg/toggle-loading.gif) center center no-repeat;
+}
+.toggle-loading  .copy {
+  float: left;
+  padding: 10px 0;
+  color: #666666;
+}
+/* .btn has secondary colors & is lrg */
+/* Buttons Must be relatively position so that the loading javascript will work */
+.btn {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #c9c9c9;
+  text-shadow: 1px 1px 1px #fff;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  background: transparent;
+  background-color: #e2e2e2;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #e2e2e2), color-stop(1, #f4f8f8));
+  background: -moz-linear-gradient(center bottom, #e2e2e2 0%, #f4f8f8 100%);
+}
+.ie7 .btn, .ie6 .btn {
+  display: inline;
+  zoom: 1;
+}
+.btn span {
+  display: block;
+  position: relative;
+  min-width: 80px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  padding: 7px 9px;
+  font-size: 13px;
+  border: 1px solid #fff;
+}
+.btn:focus {
+  border-color: #adadad;
+}
+.btn:active span {
+  position: relative;
+  top: -1px;
+  padding: 8px 10px;
+  border: none;
+}
+.btn:hover {
+  border: 1px solid #adadad;
+}
+.btn:hover span {
+  color: #444444;
+}
+.btn:active {
+  -moz-box-shadow: inset 0 0 4px #adadad;
+  -webkit-box-shadow: inset 0 0 4px #adadad;
+  box-shadow: inset 0 0 4px #adadad;
+  text-shadow: 1px 1px 1px #e2e2e2;
+  outline: none;
+}
+button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.ie6 .btn span,
+.ie6 .btn-1 span,
+.ie6 .btn-2 span.ie7 .btn span,
+.ie7 .btn-1 span,
+.ie7 .btn-2 span {
+  border: none;
+}
+/* Secondary colors (large size has shadow) */
+.btn-1, .btn-1[disabled]:active {
+  -moz-box-shadow: 0 0 4px #e2e2e2;
+  -webkit-box-shadow: 0 0 4px #e2e2e2;
+  box-shadow: 0 0 4px #e2e2e2;
+  color: #666666;
+}
+.btn-1:active {
+  color: #444444;
+}
