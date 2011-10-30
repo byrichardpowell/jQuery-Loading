@@ -8,12 +8,11 @@ You can pass in a class and loading text. The class will be added to the loading
 ##How do I style it?
 Edit the css, or style a new class. The plugin creates the following markup with any class you pass in added to the loading div:
 
------------------------------------------
-<div class="loading">
+
+`<div class="loading">
 	<span class="icon"></span>
 	loading message goes here
-</div>
------------------------------------------
+</div>`
 
 
 [Heres the demo page](http://byrichardpowell.github.com/jQuery-Loading/)
