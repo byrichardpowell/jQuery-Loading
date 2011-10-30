@@ -1,77 +1,148 @@
 <!DOCTYPE html>
-<html>
+
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+
 <head>
-  <meta charset='utf-8'>
+<meta charset="utf-8">
 
-  <title>byrichardpowell/jQuery-Loading @ GitHub</title>
+<title>jQuery Loading.  Toggle a loading state on any element</title>
+<meta name="description" content="">
+<meta name="author" content="">
 
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #e51303;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #1aecfc; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #1aecfc; }
-    h3 { text-align: center; color: #1aecfc; }
-    a { color: #1aecfc; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+
+
+<!-- For all browsers -->
+<link rel="stylesheet" media="screen" href="css/global.css">
+<link rel="stylesheet" media="print" href="css/print.css">
+
+
+
+<style type="text/css">
+  .download { float: right; }
+  pre { background: #000; color: #fff; padding: 15px;}
+</style>
+
+
+
 </head>
 
 <body>
-  <a href="http://github.com/byrichardpowell/jQuery-Loading"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="http://github.com/byrichardpowell/jQuery-Loading/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/byrichardpowell/jQuery-Loading/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/byrichardpowell/jQuery-Loading">jQuery-Loading</a>
-      <span class="small">by <a href="http://github.com/byrichardpowell">byrichardpowell</a></span></h1>
-
-    <div class="description">
-      Allows you to toggle a loading state for any part of the page.  useful where the page is about to be updated pending the results of an AJAX request
-    </div>
-
-    <h2>Authors</h2>
-<p>byrichardpowell (richardo@gmail.com)<br/>      </p>
-<h2>Contact</h2>
-<p> (richardo@gmail.com)<br/>      </p>
+	
 
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/byrichardpowell/jQuery-Loading/zipball/master">zip</a> or
-      <a href="http://github.com/byrichardpowell/jQuery-Loading/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/byrichardpowell/jQuery-Loading</pre>
-    </p>
 
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/byrichardpowell/jQuery-Loading">byrichardpowell/jQuery-Loading</a>
-    </div>
+	<div class="container">
+		
+		<article class="clm left">
+			
+			<h1>jQuery Loading</h1>
+			<p>jQuery loading is a plugin that allows you toggle a loading state on any element. Its useful for AJAX heavy sites where you wish to prevent interaction whilst an AJAX request is in progress.</p>
 
-  </div>
+			<h2>Features</h2>
+			<p>You can pass in a class and loading text. The class will be added to the loading div (along side a default class) and the text will be positioned next to the loading span.</p>
 
-  
+			<h2>How do I style it?</h2>
+			<p>Edit the css, or style a new class. The plugin creates the following markup with any class you pass in added to the loading div:</p>
+			<p><pre>&#60;div class="loading"&#62;
+	&#60;span class="icon"&#62;&#60;/span&#62;
+	loading message goes here
+&#60;/div&#62;</pre></p>
+
+			<h2>Questions?</h2>
+			<ul>
+				<li><a href="mailto:richardo@gmail.com">email me</a></li>
+				<li><a href="http://twitter.com/#!/byrichardpowell">tweet me</a></li>
+				<li><a href="http://www.byrichardpowell.co.uk">visit my website</a></li>
+			</ul>
+			
+			
+		</div>
+		
+		<aside class="clm">
+			
+			<h1>Demo</h1>
+			<p>Click the load button to enable a loading state.  Click it again to disable it:</p>
+			<p><a href="#" class="btn btn-1" id="load"><span>Click to Load</span></a></p>
+			<p><pre>$('#load').click(function(e) {
+	
+	$('.left').toggleLoading({
+		addClass: "my-class",
+		addText : "Click the button again to remove..."
+	});
+	
+})</pre></p>
+			
+			
+			<h2>Download</h2>
+		    <p>
+				You can download this project in either <a href="http://github.com/byrichardpowell/jQuery-Loading/zipball/master">zip</a> or <a href="http://github.com/byrichardpowell/jQuery-Loading/tarball/master">tar</a> formats. You can also clone the project with <a href="http://git-scm.com">Git</a> by running:
+		      	<pre>$ git clone git://github.com/byrichardpowell/jQuery-Loading</pre>
+		    </p>
+
+		    <p>
+		      get the source code on GitHub : <a href="http://github.com/byrichardpowell/Style-Select">byrichardpowell/Style-Select</a>
+		    </p>
+			
+			
+		</aside>
+		
+
+
+	</div>	
+	
+	
+	<a href="http://github.com/byrichardpowell/jQuery-Loading">
+		<img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+	</a>
+		
+
+
+
+<!-- JQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+<script> window.jQuery || document.write('<script src="js/lib/jquery-1.6.1.min.js">\x3C/script>') </script>
+
+
+<!-- Include the StyleSelect File -->
+<script src="js/toggleLoading.jquery.js"></script>
+
+
+<script>
+	
+	$(document).ready( function() {
+	
+	
+		// Then call styleSelect on a select
+		$('#load').click(function(e) {
+			$('.left').toggleLoading({
+				addClass : "my-class",
+				addText : "Click the button again to remove..."
+			});
+		})
+		
+		
+	})
+	
+</script>
+
+
+<script>
+	// Google analytics
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-18990500-1']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+</script>
+
+
+
 </body>
 </html>
