@@ -1,0 +1,33 @@
+{
+    "name": "Loading",
+    "title": "jQuery Loading",
+    "description": "jQuery loading is a plugin that allows you toggle a loading state on any element. Its useful for AJAX heavy sites where you wish to prevent interaction whilst a heavy AJAX request is in progress.",
+    "keywords": [
+        "ajax"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Richard Powell",
+        "url": "http://www.byrichardpowell.co.uk/"
+    },
+    "maintainers": [
+        {
+            "name": "Richard Powell",
+            "email": "richardo@gmail.com",
+            "url": "www.byrichardpowell.co.uk"
+        }
+    ],
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/jquery/jquery-color/blob/2.1.2/MIT-LICENSE.txt"
+        }
+    ],
+    "bugs": "https://github.com/byrichardpowell/jQuery-Loading/issues",
+    "homepage": "http://byrichardpowell.github.com/jQuery-Loading/",
+    "docs": "http://byrichardpowell.github.com/jQuery-Loading/",
+    "download": "https://github.com/byrichardpowell/jQuery-Loading",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
